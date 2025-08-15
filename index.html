@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 8px 0 4px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        h2, h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .options label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 48%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        input[type="reset"] {
+            background-color: #6c757d;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Registration Form</h1>
+    <form>
+        <!-- First Name -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <!-- Last Name -->
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <!-- Languages -->
+        <h2>Choose Languages</h2>
+        <div class="options">
+            <input type="checkbox" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label>
+            
+            <input type="checkbox" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+            
+            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+
+        <!-- Gender -->
+        <h2>Gender</h2>
+        <div class="options">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
