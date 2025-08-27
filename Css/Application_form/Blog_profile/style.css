@@ -1,0 +1,16 @@
+h1{
+text-align: center;
+color: blue;
+}
+header{
+    background-color: lightblue;
+}
+.container{
+    background-color: lime;
+}
+.about{
+    background-color: lightgrey;
+}
+.blog{
+    background-color: mediumorchid;
+}

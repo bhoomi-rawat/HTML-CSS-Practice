@@ -1,0 +1,44 @@
+h1{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color:blue ;
+    font-size: 24px;
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+}
+fieldset{
+    border:2px solid blue;
+    padding: 10px;
+    border-radius: 8px;
+}
+body{
+    margin: 2opx;
+}
+
+.form-group {
+    margin-top: 20px; /* har field ke upar gap */
+    margin-bottom: 15px;  /* har field ke neeche gap */
+}
+input{
+       width: 100%;           /* input poore form ki width lega */
+    padding: 10px;         /* andar ka gap (text aur border ke beech) */
+    border: 1px solid #ccc; 
+    border-radius: 5px;    /* thoda gol design */
+    box-sizing: border-box; /* padding ke baad bhi width fix rahe */ 
+    
+}
+label{
+    display: block;        /* label ko block ki tarah treat karega */
+    margin-bottom: 5px;   /* label aur input ke beech thoda gap */
+    font-weight: bold;     /* label ko thoda bold karega */
+}
+form {
+    width: 400px;          /* medium size box (apni requirement ke hisaab se 350-500px rakh sakta hai) */
+    margin: 0 auto;        form ko horizontally center karega 
+    padding: 20px;         /* andar ka gap */
+    /* border: 2px solid blue; */
+    border-radius: 10px;   /* thoda gol box */
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);  /* halka sa shadow */
+    
+}
